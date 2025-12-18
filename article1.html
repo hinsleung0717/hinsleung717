@@ -5,134 +5,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>求婚大作戰觀後感</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+        
+        :root {
+            --primary-color: #E9967A;
+            --secondary-color: #6D8B74;
+            --text-color: #333;
+            --light-text: #666;
+            --bg-color: #f9f9f7;
+        }
+        
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            letter-spacing: 0.5px;
         }
+        
         .post {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
+        
         .post-title {
             color: white;
-            background-color: #E9967A; /* 淺棕色背景 */
-            padding: 15px 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            background-color: var(--primary-color);
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(233, 150, 122, 0.3);
+            letter-spacing: 1px;
         }
+        
         .post-meta {
-            color: #7f8c8d;
+            color: var(--light-text);
             font-size: 0.9em;
-            margin-top: 10px;
+            margin: 15px 0 30px;
+            text-align: center;
+            font-weight: 300;
         }
+        
+        .post-content {
+            font-size: 1.05rem;
+        }
+        
+        .post-content p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+            hyphens: auto;
+        }
+        
         .post-content img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 40px auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
+        
+        h2 {
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin: 2.5em 0 1em;
+            font-size: 1.6rem;
+            position: relative;
+            padding-left: 15px;
+            letter-spacing: 1px;
+        }
+        
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.3em;
+            height: 1.2em;
+            width: 5px;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+        
         h2#Intro,
         h2#Why-first,
         h2#Why-is-it-impressive,
         h2#paragraph01,
         h2#paragraph02,
         h2#paragraph03,
-        h2#My-favorite-quote,
-        .epigraph blockquote {
-            font-family: 'Times New Roman', Times, serif;
-            font-style: italic;  /* 加入斜體樣式 */
+        h2#My-favorite-quote {
+            font-style: italic;
         }
+        
         blockquote {
-          color: #666;
-          font-size: 0.9em;
-          border-left: 3px solid #ddd;
-          padding-left: 10px;
-          margin: 10px 0;
-          font-style: italic;
+            color: var(--light-text);
+            font-size: 1.1rem;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px 20px;
+            margin: 30px 0;
+            font-style: italic;
+            background-color: rgba(233, 150, 122, 0.05);
+            border-radius: 0 8px 8px 0;
+            line-height: 1.7;
         }
+        
         .quote-section footer {
-          text-align: right;
-          font-style: normal;
-          color: #666;
-          margin-top: 1em;
+            text-align: right;
+            font-style: normal;
+            color: var(--light-text);
+            margin-top: 1.5em;
+            font-size: 0.9rem;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        figure {
+            margin: 40px 0;
+        }
+        
+        figcaption {
+            font-size: 0.9rem;
+            color: var(--light-text);
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                line-height: 1.7;
+            }
+            
+            .post-title {
+                font-size: 1.8rem;
+                padding: 15px 20px;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="/">← back to front </a>
+    <a href="/">← back to front</a>
     <div class="post">
         <h1 class="post-title">《求婚大作戰》觀後感</h1>
         <div class="post-meta">lkhmemories — Dec 17, 2025 <span id="post-date"></span></div>
         <div class="post-content">
-            <figure><figcaption><span></span></figcaption><img src="https://vbmspic.video.friday.tw/GROUP/3821/3821_10436.jpg" /></figure>
-            <p> 如果要為這個部落格選擇一部「第一篇」的電視劇，我想《求婚大作戰》幾乎是無可取代的選擇。我選擇以這部劇作為開始，正因為它並不急著給答案，卻在一次次回看中，令人成長。它並不是我看過最華麗、最精緻、也不是評價最高的一部日劇，卻是一部在不同人生階段反覆回到我身邊的作品。 </p>
-            <p> 第一次觀看時，我只看見愛情；多年後重看，卻看見了時間、選擇，以及那些被我們輕易忽略的瞬間。 </p>
-            <p> 對我而言，這部劇正好象徵了「為什麼要寫這個部落格」這件事本身——不是為了給出標準答案，也不是為了證明某種觀點，而是透過影像，重新整理那些曾經被忽略、卻始終影響著我們的情感經驗。選擇《求婚大作戰》作為起點，也是一種提醒：比起回頭懊悔，我更希望能在此刻把感受寫下來。即使人生沒有重來一次的機會，至少，我還能為那些錯過與猶豫，留下誠實的記錄。</p>
+            <figure>
+                <img src="https://vbmspic.video.friday.tw/GROUP/3821/3821_10436.jpg" alt="求婚大作戰劇照"/>
+                <figcaption>《求婚大作戰》劇照</figcaption>
+            </figure>
+            
+            <p>如果要為這個部落格選擇一部「第一篇」的電視劇，我想《求婚大作戰》幾乎是無可取代的選擇。我選擇以這部劇作為開始，正因為它並不急著給答案，卻在一次次回看中，令人成長。它並不是我看過最華麗、最精緻、也不是評價最高的一部日劇，卻是一部在不同人生階段反覆回到我身邊的作品。</p>
+            
+            <p>第一次觀看時，我只看見愛情；多年後重看，卻看見了時間、選擇，以及那些被我們輕易忽略的瞬間。</p>
+            
+            <p>對我而言，這部劇正好象徵了「為什麼要寫這個部落格」這件事本身——不是為了給出標準答案，也不是為了證明某種觀點，而是透過影像，重新整理那些曾經被忽略、卻始終影響著我們的情感經驗。選擇《求婚大作戰》作為起點，也是一種提醒：比起回頭懊悔，我更希望能在此刻把感受寫下來。即使人生沒有重來一次的機會，至少，我還能為那些錯過與猶豫，留下誠實的記錄。</p>
 
-<h2 id="Intro">Intro</h2>
+            <h2 id="Intro">Intro</h2>
+            
+            <p>《求婚大作戰》是2007年播出的一部圍繞著「如果能回到過去，人生是否會有所不同」而展開的愛情電視劇。時空穿越這個設定或許早已不新鮮，卻在這部作品中顯得格外貼切——因為它並非用來製造奇蹟，而是讓人直面那些始終無法釋懷的遺憾。</p>
+            
+            <p>故事從一場婚禮開始。</p>
+            
+            <p>岩瀨健（山下智久 飾）出席青梅竹馬吉田禮（長澤雅美 飾）的婚禮，新郎卻不是自己。教堂裡播放的一張張舊照片，讓他意識到多年來一次次錯失告白與行動的機會。就在懊悔情緒達到頂點時，居住在教堂中的神秘精靈（三上博史 飾）現身，給了他回到過去的能力。</p>
+            
+            <p>只要喊出「ハレルヤ チャンス！」，健便能透過婚禮幻燈片回到照片拍攝的當下，重新面對那些關鍵時刻，嘗試改變自己與禮的未來。</p>
 
-<p>《求婚大作戰》是2007年播出的一部圍繞著「如果能回到過去，人生是否會有所不同」而展開的愛情電視劇。時空穿越這個設定或許早已不新鮮，卻在這部作品中顯得格外貼切——因為它並非用來製造奇蹟，而是讓人直面那些始終無法釋懷的遺憾。 </p>
-<p> 故事從一場婚禮開始。 </p>
-<p> 岩瀨健（山下智久 飾）出席青梅竹馬吉田禮（長澤雅美 飾）的婚禮，新郎卻不是自己。教堂裡播放的一張張舊照片，讓他意識到多年來一次次錯失告白與行動的機會。就在懊悔情緒達到頂點時，居住在教堂中的神秘精靈（三上博史 飾）現身，給了他回到過去的能力。 </p>
-<p> 只要喊出「ハレルヤ チャンス！」，健便能透過婚禮幻燈片回到照片拍攝的當下，重新面對那些關鍵時刻，嘗試改變自己與禮的未來。 </p>
+            <h2 id="Why-first">為什麼選擇《求婚大作戰》作為第一篇電視劇部落格</h2>
+            
+            <p>如果要為這個部落格選擇一個起點，《求婚大作戰》幾乎是無可取代的存在。</p>
+            
+            <p>它不是我看過最華麗或最精緻的日劇，卻是一部在不同人生階段反覆回到我身邊的作品。第一次看見的是愛情，多年後重看，看到的卻是時間、選擇，以及那些被忽略的瞬間。</p>
+            
+            <p>對我而言，這正好回應了寫這個部落格的初衷——不是給答案，也不是下定論，而是透過影像，整理那些長久以來影響著我們的人生片段。</p>
 
-<h2 id="Why-first">為什麼選擇《求婚大作戰》作為第一篇電視劇部落格</h2>
-<p> 如果要為這個部落格選擇一個起點，《求婚大作戰》幾乎是無可取代的存在。 </p>
-<p> 它不是我看過最華麗或最精緻的日劇，卻是一部在不同人生階段反覆回到我身邊的作品。第一次看見的是愛情，多年後重看，看到的卻是時間、選擇，以及那些被忽略的瞬間。 </p>
-<p> 對我而言，這正好回應了寫這個部落格的初衷——不是給答案，也不是下定論，而是透過影像，整理那些長久以來影響著我們的人生片段。 </p>
+            <h2 id="Why-is-it-impressive">Why is it impressive</h2>
+            
+            <p>距離這部劇首播已近二十年，我卻總會在固定的頻率重新點開它。我記得第一次看還是一個小學生。那時候年紀還小，只覺得這是一部帶點奇幻設定的愛情劇：男主角可以一次又一次回到過去，試圖挽回錯過的感情。</p>
+            
+            <p>直到很多年後，在某個平靜卻略顯疲憊的夜晚，我重新打開這部日劇，才發現它真正講的，從來不是「重來一次能不能成功」，而是「人為什麼總是在該開口的時候選擇沉默」。</p>
+            
+            <p>它也讓我明白，成長並不來自於一次戲劇性的改變，而是來自無數次面對選擇時的自省；真正重要的，往往不是結果是否圓滿，而是我們是否曾經誠實地對待自己的感受。它也提醒我，沉默與猶豫本身就是一種選擇，而這樣的選擇，同樣需要承擔後果。</p>
+            
+            <p>或許正因如此，《求婚大作戰》從來不是一部看完就能放下的作品。它會隨著觀看者的年紀與經歷而改變重量，在人生不同階段，反覆映照出「當時的自己」還不懂的那些事。</p>
 
-<h2 id="Why-is-it-impressive"> Why is it impressive </h2>
-<p> 距離這部劇首播已近二十年，我卻總會在固定的頻率重新點開它。我記得第一次看還是一個小學生。那時候年紀還小，只覺得這是一部帶點奇幻設定的愛情劇：男主角可以一次又一次回到過去，試圖挽回錯過的感情。</p>
-<p> 直到很多年後，在某個平靜卻略顯疲憊的夜晚，我重新打開這部日劇，才發現它真正講的，從來不是「重來一次能不能成功」，而是「人為什麼總是在該開口的時候選擇沉默」。 </p>
-<p> 它也讓我明白，成長並不來自於一次戲劇性的改變，而是來自無數次面對選擇時的自省；真正重要的，往往不是結果是否圓滿，而是我們是否曾經誠實地對待自己的感受。它也提醒我，沉默與猶豫本身就是一種選擇，而這樣的選擇，同樣需要承擔後果。</p>
-<p> 或許正因如此，《求婚大作戰》從來不是一部看完就能放下的作品。它會隨著觀看者的年紀與經歷而改變重量，在人生不同階段，反覆映照出「當時的自己」還不懂的那些事。 </p>
+            <h2 id="paragraph01">從結局往回走的人生敘事</h2>
+            
+            <p>《求婚大作戰》在敘事上最精巧的設計，並不只是「回到過去」，而是它徹底採取了一種以結局為起點的倒述結構。</p>
+            
+            <p>故事一開始，觀眾就已經知道結果：女主角即將步入他人的婚姻，男主角被留在原地。這種做法刻意取消了傳統愛情劇「結果未知」所帶來的期待感，轉而把重心放在另一個問題上——究竟是哪一連串微小、看似無關緊要的選擇，把人生一步步推向這個結局。</p>
+            
+            <p>每一集的時光回溯，都不是為了製造新的懸念，而是對既有結果的反覆拆解。劇情讓觀眾先看見終點，再陪著角色往回走，重新審視那些當時以為「沒那麼重要」的瞬間：一次沒有說出口的告白、一個被忽略的眼神、一句被玩笑掩蓋的真心。</p>
+            
+            <p>這種倒述方式，使故事不再是線性前進，而更像是在記憶中來回踱步。時間並沒有真正被改寫，只是不斷被重新理解。觀眾也因此被迫意識到，人生中的關鍵時刻，往往不是戲劇性的轉折，而是那些當下看似平凡、事後卻再也回不去的片段。</p>
 
-<h2 id="paragraph01"> 從結局往回走的人生敘事 </h2>
-<p> 《求婚大作戰》在敘事上最精巧的設計，並不只是「回到過去」，而是它徹底採取了一種以結局為起點的倒述結構。 </p>
-<p> 故事一開始，觀眾就已經知道結果：女主角即將步入他人的婚姻，男主角被留在原地。這種做法刻意取消了傳統愛情劇「結果未知」所帶來的期待感，轉而把重心放在另一個問題上——究竟是哪一連串微小、看似無關緊要的選擇，把人生一步步推向這個結局。 </p>
-<p> 每一集的時光回溯，都不是為了製造新的懸念，而是對既有結果的反覆拆解。劇情讓觀眾先看見終點，再陪著角色往回走，重新審視那些當時以為「沒那麼重要」的瞬間：一次沒有說出口的告白、一個被忽略的眼神、一句被玩笑掩蓋的真心。 </p>
-<p> 這種倒述方式，使故事不再是線性前進，而更像是在記憶中來回踱步。時間並沒有真正被改寫，只是不斷被重新理解。觀眾也因此被迫意識到，人生中的關鍵時刻，往往不是戲劇性的轉折，而是那些當下看似平凡、事後卻再也回不去的片段。 </p>
+            <h2 id="paragraph02">故事從一場婚禮開始，也從後悔開始</h2>
+            
+            <p>《求婚大作戰》的開場，是一場對任何人來說都殘酷的場面。</p>
+            
+            <p>坐在教堂裡的岩瀨健，看著自己暗戀多年的青梅竹馬吉田禮，穿著婚紗、走向另一個人。那不是失戀的瞬間，而是意識到「原來一切早已結束」的瞬間。</p>
+            
+            <p>也正是在那一刻，所謂的奇蹟出現了——教堂精靈讓他一次次回到過去，回到那些他本可以做出不同選擇的時間點。</p>
+            
+            <p>但劇情並沒有往爽快逆轉的方向前進。每一次回去，都更像是一面鏡子，逼著他重新面對自己曾經的逃避。</p>
 
-<h2 id="paragraph02"> 故事從一場婚禮開始，也從後悔開始 </h2>
-<p> 《求婚大作戰》的開場，是一場對任何人來說都殘酷的場面。 </p>
-<p> 坐在教堂裡的岩瀨健，看著自己暗戀多年的青梅竹馬吉田禮，穿著婚紗、走向另一個人。那不是失戀的瞬間，而是意識到「原來一切早已結束」的瞬間。 </p>
-<p> 也正是在那一刻，所謂的奇蹟出現了——教堂精靈讓他一次次回到過去，回到那些他本可以做出不同選擇的時間點。 </p>
-<p> 但劇情並沒有往爽快逆轉的方向前進。每一次回去，都更像是一面鏡子，逼著他重新面對自己曾經的逃避。 </p>
+            <h2 id="paragraph03">回到過去，並不會讓人立刻變勇敢</h2>
+            
+            <p>如果人生真的可以重來，我們是不是就能把一切都做好？</p>
+            
+            <p>《求婚大作戰》的答案是否定的。</p>
+            
+            <p>健一次次失敗，不是因為命運殘酷，而是因為他仍然是那個熟悉的自己：</p>
+            
+            <p>該說出口的話，選擇用玩笑帶過</p>
+            
+            <p>該承擔的情緒，用「再等等」拖延</p>
+            
+            <p>把猶豫誤認成體貼</p>
+            
+            <p>這些細節讓我在重看時感到不安，因為那並不是戲劇化的誇張，而是我們每個人或多或少都做過的選擇。</p>
 
-<h2 id="paragraph03"> 回到過去，並不會讓人立刻變勇敢 </h2>
-<p> 如果人生真的可以重來，我們是不是就能把一切都做好？ </p>
-<p> 《求婚大作戰》的答案是否定的。 </p>
-<p> 健一次次失敗，不是因為命運殘酷，而是因為他仍然是那個熟悉的自己： </p>
-<p>     該說出口的話，選擇用玩笑帶過 </p>
-<p>     該承擔的情緒，用「再等等」拖延 </p>
-<p>     把猶豫誤認成體貼 </p>
-<p> 這些細節讓我在重看時感到不安，因為那並不是戲劇化的誇張，而是我們每個人或多或少都做過的選擇。 </p>
-
-<h2 id="My-favorite-quote"> My favorite quote </h2>
-<div class="quote-section">
-    <blockquote>
-        <p>雖然我們會經常執着於過去，但就算回到過去，可能可以填補遺憾，結局卻不會有改變。</p>
-        <p>正如劇中，每個人手上都拿著一把開啟奇蹟之門的鑰匙，只是明白這個道理的人少之又少。</p>
-        <p>改變命運的奇蹟，從不以匆匆的態度出現，只要心懷改變的夢，一步步不斷積累，總有一天奇蹟之門會為你敞開。</p>
-        <p>我們要做的，可能是用現在用填補，而不是一直執着於過去。</p>
-        <footer>— 《求婚大作戰》</footer>
-        <p> Although we often cling to the past, even if we could return to it and mend our regrets, the ending might remain unchanged. </p>
-        <p> Just as the drama suggests, everyone holds a key to the door of miracles—yet very few ever realize it. </p>
-        <p> Miracles that alter destiny never arrive in haste. As long as one carries the dream of change and continues to move forward, step by step, the door of miracles will eventually open. </p>
-        <p> Perhaps what we should do is not remain trapped in the past, but learn to mend it through the present. </p>
-        <footer> — Operation Love </footer>
-        <p> 我們都曾因為某個當下提不起勇氣或錯失良機，導致事後懊悔不已。 </p>
-        <p> 可是，世上沒有後悔藥，又有多少人能像健三一樣擁有彌補的機會。 </p>
-        <footer>— 《求婚大作戰》</footer>
-        <p> We have all, at one moment or another, lacked the courage to act or missed a fleeting opportunity—only to be left with regret afterward. </p>
-        <p> Yet there is no remedy for regret in this world, and how many people can truly be granted a second chance like Ken Iwase’s? </p>
-        <footer>— Operation Love </footer>
-    </blockquote>
-</div>
+            <h2 id="My-favorite-quote">My favorite quote</h2>
+            
+            <div class="quote-section">
+                <blockquote>
+                    <p>雖然我們會經常執着於過去，但就算回到過去，可能可以填補遺憾，結局卻不會有改變。</p>
+                    <p>正如劇中，每個人手上都拿著一把開啟奇蹟之門的鑰匙，只是明白這個道理的人少之又少。</p>
+                    <p>改變命運的奇蹟，從不以匆匆的態度出現，只要心懷改變的夢，一步步不斷積累，總有一天奇蹟之門會為你敞開。</p>
+                    <p>我們要做的，可能是用現在用填補，而不是一直執着於過去。</p>
+                    <footer>— 《求婚大作戰》</footer>
+                    
+                    <p>Although we often cling to the past, even if we could return to it and mend our regrets, the ending might remain unchanged.</p>
+                    <p>Just as the drama suggests, everyone holds a key to the door of miracles—yet very few ever realize it.</p>
+                    <p>Miracles that alter destiny never arrive in haste. As long as one carries the dream of change and continues to move forward, step by step, the door of miracles will eventually open.</p>
+                    <p>Perhaps what we should do is not remain trapped in the past, but learn to mend it through the present.</p>
+                    <footer>— Operation Love</footer>
+                    
+                    <p>我們都曾因為某個當下提不起勇氣或錯失良機，導致事後懊悔不已。</p>
+                    <p>可是，世上沒有後悔藥，又有多少人能像健三一樣擁有彌補的機會。</p>
+                    <footer>— 《求婚大作戰》</footer>
+                    
+                    <p>We have all, at one moment or another, lacked the courage to act or missed a fleeting opportunity—only to be left with regret afterward.</p>
+                    <p>Yet there is no remedy for regret in this world, and how many people can truly be granted a second chance like Ken Iwase's?</p>
+                    <footer>— Operation Love</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
