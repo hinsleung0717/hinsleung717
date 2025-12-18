@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>技術與影視部落格</title>
+    <title> lkhmemories </title>
     <style>
         :root {
-            --primary: #2563eb;
-            --primary-light: #3b82f6;
+            --primary: #1a5877;
             --secondary: #10b981;
             --accent: #ef4444;
             --dark: #1e293b;
@@ -29,7 +28,7 @@
         }
 
         body {
-            font-family: 'Inter', 'Microsoft JhengHei', sans-serif;
+            font-family: 'Noto Sans TC', sans-serif;
             line-height: 1.6;
             color: var(--dark);
             background-color: var(--light);
@@ -59,32 +58,42 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
+            font-style: italic;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            letter-spacing: 1px;
+            font-family: 'Times New Roman', Times, serif;
         }
 
-        .logo-icon {
-            width: 1.75rem;
-            height: 1.75rem;
+        .logo .lkh {
+            text-transform: uppercase;
+        }
+
+        .logo .memories {
+            font-size: 1rem;
         }
 
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .nav-links a {
             text-decoration: none;
+            font-style: italic;
             color: var(--dark);
             font-weight: 500;
             transition: color 0.2s;
             position: relative;
+            font-size: 1.1rem;
         }
 
         .nav-links a:hover {
@@ -111,6 +120,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
             padding: 4rem 0;
+            gap: 2rem;
             margin-bottom: 4rem;
         }
 
@@ -150,11 +160,11 @@
         .post-category {
             display: inline-block;
             padding: 0.25rem 0.75rem;
-            background-color: var(--primary-light);
+            background-color: var(--primary);
             color: white;
             border-radius: var(--radius-sm);
             font-size: 0.75rem;
-            font-weight: 600;
+            font-weight: 1000;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
@@ -412,18 +422,14 @@
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">
-                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                        <polyline points="13 2 13 9 20 9"></polyline>
-                    </svg>
-                    TechBlog
+                    <span class="lkh">LKH</span>
+                    <span class="memories">memories</span>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">文章</a></li>
-                    <li><a href="#">作品集</a></li>
-                    <li><a href="#">關於</a></li>
-                    <li><a href="#">聯絡</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ARTICLE</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">ABOUT</a></li>
                 </ul>
             </nav>
         </div>
@@ -440,7 +446,7 @@
                         <span>2025-12-17</span>
                     </div>
                     <h3 class="post-title"><a href="/article1.html">《求婚大作戰》觀後感</a></h3>
-                    <p class="post-excerpt">《求婚大作戰》是一部以「如果能回到過去，是否能改變人生選擇」為核心主題的愛情電視劇，日版與翻拍版皆具有高度知名度。</p>
+                    <p class="post-excerpt">《求婚大作戰》是2007年播出的一部圍繞著「如果能回到過去，人生是否會有所不同」而展開的愛情電視劇。時空穿越這個設定或許早已不新鮮... </p>
                     <a href="/article1.html" class="read-more">
                         閱讀更多
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
