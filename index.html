@@ -268,9 +268,12 @@
         margin-right: 1rem;
     }
     
-    .album-info {
-        flex: 1;
-    }
+.album-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
     
     .album-title {
         font-size: 1rem; /* 調整字體大小 */
@@ -296,6 +299,20 @@
                 margin-bottom: 1rem;
             }
         }
+      .album-lyrics {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--gray);
+      font-style: italic;
+      line-height: 1.5;
+      padding-left: 0.5rem;
+      border-left: 2px solid var(--secondary);
+      }
+
+      .album-lyrics p {
+          margin-bottom: 0.5rem;
+      }
+      
         footer {
             background-color: var(--dark);
             color: white;
@@ -341,7 +358,8 @@
                 <ul class="nav-links">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ARTICLE</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>  <!-- 添加 id 連結 -->
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#recommended-songs">SONGS</a></li>  <!-- 新增的 SONGS 按鈕 -->
                     <li><a href="#">ABOUT</a></li>
                 </ul>
             </nav>
@@ -357,7 +375,7 @@
                         <span class="post-category">影視</span>
                         <span>2025-12-17</span>
                     </div>
-                    <h3 class="post-title"><a href="/article1.html">求婚大作戰</a></h3>
+                    <h3 class="post-title"><a href="/article01.html">求婚大作戰</a></h3>
                     <p class="post-excerpt">《求婚大作戰》是2007年播出的一部圍繞著「如果能回到過去，人生是否會有所不同」而展開的愛情電視劇。時空穿越這個設定或許早已不新鮮...</p>
                     <a href="/article01.html" class="read-more">閱讀更多</a>
                 </div>
@@ -367,11 +385,11 @@
                 <img src="https://cdn.sounova.com/upload/1Qp90PD0FyHxvaBpFhZxq.webp" alt="全知讀者視角" class="post-image">
                 <div class="post-content">
                     <div class="post-meta">
-                        <span class="post-category">小說</span>
-                        <span>2025-12-12</span>
+                        <span class="post-category">風景</span>
+                        <span>2025-12-16</span>
                     </div>
-                    <h3 class="post-title"><a href="#">全知讀者視角</a></h3>
-                    <p class="post-excerpt">學習如何使用 React 18 的新特性如 Concurrent Rendering 和 Automatic Batching 來提升應用程式效能...</p>
+                    <h3 class="post-title"><a href="/article02.html">藍調時刻 Blue Hour</a></h3>
+                    <p class="post-excerpt">The term “blue hour,” derived from the French l’heure bleue. It describes a brief phase of twilight, occurring either in the morning...</p>
                     <a href="#" class="read-more">閱讀更多</a>
                 </div>
             </article>
@@ -405,32 +423,51 @@
             </div>
         </div>
     </section>
-        <section class="favorite-albums">
-            <div class="container">
-                <h2 class="section-title">Recommended <i>songs</i></h2>
-                <div class="albums-container">
-                    <div class="album-item">
-                        <div class="album-header">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKgD6HnMYrPkc16-2bd3Iu64AfoHdOgRr6g&s" alt="Never Enough" class="album-cover">
-                            <div class="album-info">
-                                <h3 class="album-title">NEVER ENOUGH</h3>
-                                <p class="album-artist">by Daniel Caesar</p>
-                            </div>
-                        </div>
-                    </div>            
-                <div class="albums-container">
-                    <div class="album-item">
-                        <div class="album-header">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9BK26llYLXSCfq2oSR6wotZUrXiksMDwVuQ&s" alt="Nights like this" class="album-cover">
-                            <div class="album-info">
-                                <h3 class="album-title">NIGHTS LIKE THIS</h3>
-                                <p class="album-artist">by The Kid LAROI</p>
-                            </div>
-                        </div>
-                    </div> 
+<section class="favorite-albums" id="recommended-songs">
+    <div class="container">
+        <h2 class="section-title">Recommended <i>r&bs</i></h2>
+        <div class="albums-container">
+            <div class="album-item">
+                <div class="album-header">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKgD6HnMYrPkc16-2bd3Iu64AfoHdOgRr6g&s" alt="Never Enough" class="album-cover">
+                    <div class="album-info">
+                        <h3 class="album-title">NEVER ENOUGH</h3>
+                        <p class="album-artist">by Daniel Caesar</p>
+                    </div>
+                </div>
             </div>
+            
+            <div class="album-item">
+                <div class="album-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Channel_ORANGE.jpg" alt="CHANNEL ORANGE" class="album-cover">
+                    <div class="album-info">
+                        <h3 class="album-title">CHANNEL ORANGE</h3>
+                        <p class="album-artist">by Frank Ocean</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="album-item">
+                <div class="album-header">
+                    <img src="music03.jpg" alt="丸ノ内サディスティック" class="album-cover">
+                    <div class="album-info">
+                        <h3 class="album-title">丸ノ内サディスティック</h3>
+                        <p class="album-artist">by Sheena Ringo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="album-item">
+                <div class="album-header">
+                    <img src="https://s.eslite.com/upload/product/o/2682162219001/20220420012229959307.jpg" alt="GABRIEL" class="album-cover">
+                    <div class="album-info">
+                        <h3 class="album-title">GABRIEL</h3>
+                        <p class="album-artist">by Keshi</p>
+                    </div>
+                </div>
+            </div>          
         </div>
-    </section>
+    </div>
+</section>
         <footer>
         <div class="container">
             <p class="copyright">© 2025 lkhmemories</p>
