@@ -81,18 +81,20 @@
             display: flex;
             gap: 30px;
             margin: 40px 0;
-            align-items: center;
+            align-items: flex-start; /* 修改为flex-start而不是center */
         }
-        
+
         .text-content {
             flex: 1;
+            align-self: flex-start; /* 确保文字内容始终顶部对齐 */
         }
-        
+
         .image-wrapper {
             flex: 1;
             display: flex;
             flex-direction: column;
             gap: 20px;
+            align-items: flex-start; /* 图片容器也顶部对齐 */
         }
         
         .image-wrapper img {
