@@ -107,7 +107,22 @@
             color: var(--primary-color);
             text-decoration: underline;
         }
-        
+            .post-content > img {
+        width: 100%;
+        height: auto;
+        max-width: 800px;  /* 全寬圖片的最大寬度 */
+        display: block;
+        margin: 30px auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+        .image-wrapper img, 
+        .post-content > img {
+            max-width: 100%;  /* 在小屏幕上使用全寬 */
+        }
+    }
         .image-row {
             display: flex;
             gap: 30px;
